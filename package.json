@@ -1,0 +1,30 @@
+{
+    "name": "simply-commands",
+    "version": "0.1.2",
+    "author": "palm1",
+    "description": "A simple command builder for SerenityJS.",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsup",
+        "watch": "tsup --watch"
+    },
+    "keywords": [
+        "SerenityJS",
+        "Plugin",
+        "TypeScript",
+        "Commands"
+    ],
+    "peerDependencies": {
+        "@serenityjs/core": "*",
+        "@serenityjs/plugins": "*",
+        "@serenityjs/protocol": "*",
+        "@serenityjs/logger": "*",
+        "@serenityjs/nbt": "*"
+    },
+    "devDependencies": {
+        "tsup": "^8.3.5",
+        "typescript": "^5.6.3"
+    }
+}
