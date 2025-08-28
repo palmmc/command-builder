@@ -40,6 +40,8 @@ Adds a plugin building system that allows for more organization and freedom with
 Yep, that's it! Here's an example to show you how the structure works for the command builder.
 > **Example Usage**
 ```ts
+import type { CommandBuilder, CommandOverload } from "serenity-command-builder";
+
 // Create a new command.
 new CommandBuilder("test", "Prints hello world to selectors.") // This command will be accessible using '/test'.
   .setPermissions(["commandbuilder.test"]) // Hide this command unless the player has the 'commandbuilder.test' permission.
