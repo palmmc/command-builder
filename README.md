@@ -1,4 +1,4 @@
-# Simply Commands
+# Command Builder
 Build class oriented commands for **[SerenityJS](https://github.com/SerenityJS/serenity)**.<br>
 Adds a plugin building system that allows for more organization and freedom with registering your own commands.
 
@@ -8,26 +8,26 @@ Adds a plugin building system that allows for more organization and freedom with
 
     ```bash
     #npm
-    npm install simply-commands
+    npm install serenity-command-builder
   
     #yarn
-    yarn add simply-commands
+    yarn add serenity-command-builder
     
     #bun
-    bun add simply-commands
+    bun add serenity-command-builder
     ```
 > [!NOTE]
 > If you are having trouble with this step, try adding `--prefix <path/to/your/plugin/project>` at the end of the command.
 3. **Import into your Plugin:** In your plugin's main file, import the `CommandBuilderPlugin` class.
 
     ```ts
-    import type { CommandBuilderPlugin } from "simply-commands";
+    import type { CommandBuilderPlugin } from "serenity-command-builder";
     ```
 4. **Resolve the Plugin Instance:** Once your plugin is initialized, resolve the `CommandBuilderPlugin` instance that you have installed so you can use its features.
     ```ts
     import { Plugin } from "@serenityjs/plugins";
     
-    import type { CommandBuilderPlugin } from "simply-commands";
+    import type { CommandBuilderPlugin } from "serenity-command-builder";
     
     class ExamplePlugin extends Plugin {
       public onInitialize(): void {
